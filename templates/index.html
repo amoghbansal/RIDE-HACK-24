@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Collection Form</title>
+    <link rel="stylesheet" href="../static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Data Collection Form</h1>
+        <form id="dataForm" action="{{ url_for('read_form') }}" method="POST">
+            <h2>Personal Information</h2>
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+
+            <label for="course">Course:</label>
+            <input type="text" id="course" name="course" required>
+
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+
+            <!-- Academic Information -->
+            <h2>Academic Information</h2>
+            <label for="cgpa">CGPA:</label>
+            <input type="number" id="cgpa" name="cgpa" step="0.01" required>
+
+            <!-- Stress, Depression, Anxiety -->
+            <h2>Stress, Depression, Anxiety</h2>
+            <label for="stressLevel">Stress Level:</label>
+            <input type="number" id="stressLevel" name="stressLevel" required>
+
+            <label for="depressionScore">Depression Score:</label>
+            <input type="number" id="depressionScore" name="depressionScore" required>
+
+            <label for="anxietyScore">Anxiety Score:</label>
+            <input type="number" id="anxietyScore" name="anxietyScore" required>
+
+            <!-- Health and Lifestyle -->
+            <h2>Health and Lifestyle</h2>
+            <label for="sleepQuality">Sleep Quality:</label>
+            <input type="text" id="sleepQuality" name="sleepQuality" required>
+
+            <label for="physicalActivity">Physical Activity:</label>
+            <input type="text" id="physicalActivity" name="physicalActivity" required>
+
+            <!-- Additional Information -->
+            <h2>Additional Information</h2>
+            <label for="dietQuality">Diet Quality:</label>
+            <input type="text" id="dietQuality" name="dietQuality" required>
+
+            <label for="socialSupport">Social Support:</label>
+            <input type="text" id="socialSupport" name="socialSupport" required>
+
+            <label for="relationshipStatus">Relationship Status:</label>
+            <select id="relationshipStatus" name="relationshipStatus" required>
+                <option value="single">Single</option>
+                <option value="inRelationship">In a Relationship</option>
+                <option value="married">Married</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="substanceUse">Substance Use:</label>
+            <input type="text" id="substanceUse" name="substanceUse" required>
+
+            <label for="counselingServiceUse">Counseling Service Use:</label>
+            <input type="text" id="counselingServiceUse" name="counselingServiceUse" required>
+
+            <label for="familyHistory">Family History:</label>
+            <input type="text" id="familyHistory" name="familyHistory" required>
+
+            <label for="chronicIllness">Chronic Illness:</label>
+            <input type="text" id="chronicIllness" name="chronicIllness" required>
+
+            <label for="financialStress">Financial Stress:</label>
+            <input type="text" id="financialStress" name="financialStress" required>
+
+            <label for="extracurricularInvolvement">Extracurricular Involvement:</label>
+            <input type="text" id="extracurricularInvolvement" name="extracurricularInvolvement" required>
+
+            <label for="semesterCreditLoad">Semester Credit Load:</label>
+            <input type="number" id="semesterCreditLoad" name="semesterCreditLoad" required>
+
+            <label for="residenceType">Residence Type:</label>
+            <select id="residenceType" name="residenceType" required>
+                <option value="onCampus">On-Campus</option>
+                <option value="offCampus">Off-Campus</option>
+            </select>
+
+            <!-- Submit Button -->
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="../static/script.js"></script>
+</body>
+</html>
