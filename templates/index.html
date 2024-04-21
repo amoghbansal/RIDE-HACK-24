@@ -43,7 +43,12 @@
             <!-- Health and Lifestyle -->
             <h2>Health and Lifestyle</h2>
             <label for="sleepQuality">Sleep Quality:</label>
-            <input type="text" id="sleepQuality" name="sleepQuality" required>
+            <select id="sleepQuality" name="sleepQuality" required>
+                <option value="" disabled selected>Select your sleep quality</option>
+                <option value="Good">Good</option>
+                <option value="Average">Average</option>
+                <option value="Poor">Poor</option>
+            </select>
 
             <label for="physicalActivity">Physical Activity:</label>
             <input type="text" id="physicalActivity" name="physicalActivity" required>
