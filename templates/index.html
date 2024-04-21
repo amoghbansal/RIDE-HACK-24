@@ -60,9 +60,14 @@
 
 
             <!-- Additional Information -->
-            <h2>Additional Information</h2>
+        <h2>Additional Information</h2>
             <label for="dietQuality">Diet Quality:</label>
-            <input type="text" id="dietQuality" name="dietQuality" required>
+            <select id="dietQuality" name="dietQuality" required>
+                <option value="" disabled selected>Select your diet quality</option>
+                <option value="Good">Good</option>
+                <option value="Average">Average</option>
+                <option value="Poor">Poor</option>
+            </select>
 
             <label for="socialSupport">Social Support:</label>
             <input type="text" id="socialSupport" name="socialSupport" required>
