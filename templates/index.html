@@ -81,7 +81,12 @@
             </select>
 
             <label for="substanceUse">Substance Use:</label>
-            <input type="text" id="substanceUse" name="substanceUse" required>
+            <select id="substanceUse" name="substanceUse" required>
+                <option value="" disabled selected>Select your substance use</option>
+                <option value="Frequently">Frequently</option>
+                <option value="Occasionally">Occasionally</option>
+                <option value="Never">Never</option>
+            </select>
 
             <label for="counselingServiceUse">Counseling Service Use:</label>
             <input type="text" id="counselingServiceUse" name="counselingServiceUse" required>
