@@ -54,14 +54,12 @@
   <div class="alert" id="emptyFieldsAlert" style="display: none">
     Please fill in all fields!
   </div>
-    
   <img src="../images/signupill.png" alt="" />
   <div class="login">
     <div class="welcome">
       <h1 class="titletext">Welcome Back &#x1F917</h1>
       <span>Please enter your details.</span>
     </div>
-    
     <div class="inputs">
       <span>Email<br /></span>
       <input class="inputbox" placeholder="Enter your email" id="loginEmail" /><br />
@@ -75,7 +73,6 @@
     <p class="back"><a class="tag" href="../home.html">&#8592; Back</a></p>
     <div class="button">
       <input type="button" class="signin" value="Sign in" id="loginButton" />
-      
     </div>
     <div class="signupline">
       <span>Don't have an account?</span>
@@ -87,22 +84,18 @@
       <h1 class="titletext">Create an account</h1>
       <span>Let's get started.</span>
     </div>
-    
     <div class="inputs">
       <span>Username<br /></span>
       <input class="inputbox" placeholder="Enter your username" id="signupUsername" /><br />
       <span>Email<br /></span>
       <input class="inputbox" placeholder="Enter your email" id="signupEmail" /><br />
-      
       <span>Password<br /></span>
       <input type="password" class="inputbox" placeholder="••••••••" id="signupPassword" />
       <i class="fas fa-eye-slash" id="toggleSignupPassword" style="margin-left: -30px; cursor: pointer;"></i>
     </div>
     <p class="back-1"><a class="tag1" href="../home.html">&#8592; Back</a></p>
-    
     <div class="button">
       <input type="button" class="signin" value="Sign up" id="signupButton" />
-      
     </div>
     <div class="signupline">
       <span>Already have an account?</span>
@@ -115,13 +108,11 @@
   <div class="alert" id="signupAlert">Sign up successful!</div>
 
   <script>
-    
     const signin_btn = document.querySelector(".signinbutton");
     const signup_btn = document.querySelector(".signupbutton");
     const register = document.querySelector(".register");
     const login = document.querySelector(".login");
     signup_btn.addEventListener("click", () => {
-      
       register.style.display = "block";
       login.style.display = "none";
     });
